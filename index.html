@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Calculator </title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+     <h1 id="cal"> A simple Calculator </h1>
+
+     <div class="box">
+        <p id="text">Casio</p>
+        <form name = "btns" class="format">
+            <input id = "calc" type ="text" name = "answer"> <br><br>
+            <input type = "button" value = "7" onclick="btns.answer.value+= 7">
+            <input type = "button" value = "8" onclick="btns.answer.value+= 8">
+            <input type = "button" value = "9" onclick="btns.answer.value+= 9"> 
+            <input type = "button" value = "AC" class="color" onclick="btns.answer.value = ' '"> <br><br>
+            <input type = "button" value = "4" onclick="btns.answer.value+= 4">
+            <input type = "button" value = "5" onclick="btns.answer.value+= 5">
+            <input type = "button" value = "6" onclick="btns.answer.value+= 6">
+            <input type = "button" value = "+" onclick="btns.answer.value+='+'"> <br><br>
+            <input type = "button" value = "1" onclick="btns.answer.value+= 1">
+            <input type = "button" value = "2" onclick="btns.answer.value+= 2">
+            <input type = "button" value = "3" onclick="btns.answer.value+= 3">
+            <input type = "button" value = "-" onclick="btns.answer.value+= '-'"> <br><br>
+            <input type = "button" value = "/" onclick="btns.answer.value+= '/'">
+            <input type = "button" value = "0" onclick="btns.answer.value+= 0">
+            <input type = "button" value = "." onclick="btns.answer.value+= '.'">
+            <input type = "button" value = "x" onclick="btns.answer.value+= '*'">
+            <input type = "button" value = "Delete" id= "delete" onclick="btns.answer.value = btns.answer.value.substr(0,btns.answer.value.length-1)">
+            <input type = "button" value = "=" id= "delete" onclick="btns.answer.value= eval(btns.answer.value) "><br> 
+            
+        </form>
+     </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
